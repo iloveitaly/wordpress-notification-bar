@@ -1,0 +1,17 @@
+@import "../../themes/roots/assets/less/bootstrap/mixins.less";
+
+@green_bar: #5cb85c;
+
+#wordpress_notification_bar {
+	padding: 7px 0;
+	text-align: center;
+	color: white;
+
+	#gradient > .vertical(@green_bar, darken(@green_bar, 7%));
+
+	a {
+		color: white;
+		&:hover { color: darken(white, 10%); }
+		text-decoration: none;
+	}
+}
